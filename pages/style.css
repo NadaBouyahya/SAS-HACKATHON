@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.nav_image{
+    width: 100%;
+    position: relative;
+}
+
+.game_title{
+    position: absolute;
+    top: 60px;
+    left: 35%;
+    font-size: 30px;
+}
+
+.kids_holding{
+    width: 15%;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    50%  {left:100px; top:0px;}
+    100%  {left:-100px; top:0px;}
+    /* 75%  {left:0px; top:200px;} */
+    /* 100% {left:0px; top:0px;}  */
+  }

@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="style.css">
 <div class="game">
-    <div class="name">Fast typing</div>
+    <!-- <div class="name">Fast typing</div> -->
     <div class="container">
       <div class="message">
         You Are Playing On
@@ -10,10 +10,14 @@
       <div class="start">Start Playing</div>
       <div class="the-word"></div>
       <input type="text" class="input" />
+      <button id="easy" onclick="changeDifficulty('easy')">Easy</button>
+      <button id="medium" onclick="changeDifficulty('medium')">Medium</button>
+      <button id="hard" onclick="changeDifficulty('hard')">Hard</button>
       <div class="upcoming-words">Words Will Show Here</div>
       <div class="control">
         <div class="time">Time Left: <span></span> Seconds</div>
         <div class="score">
+          <button class="restart-btn">Restart Game</button>
           Score: <span class="got">0</span> From <span class="total"></span>
         </div>
       </div>

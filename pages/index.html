@@ -14,8 +14,31 @@
         <h1 class="game_title">SPEED TYPING GAME</h1>
     </div>
     
-    <div>
+    <div class="kids_holding_div">
         <img class="kids_holding" src="../2794.jpg" alt="">
     </div>
+
+    <section class="choose_level">
+        <h1 class="message_lost"> YOU LOST</h1>
+        <div class="button_level">
+            <h2>Choose Level</h2>
+            <div class="levels">
+                <ul>
+                    <li><button onclick="changeDifficulty(0)" id="easy">easy</button></li>
+                    <li><button onclick="changeDifficulty(1)" id="normal">normal</button></li>
+                    <li><button onclick="changeDifficulty(2)" id="hard">hard</button></li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="score_timer">
+        <span id="score">score:</span>
+        <span id="timer">Timer:</span>
+    
+    </section>
+
+    <script src="../script.js"></script>
 </body>
 </html>

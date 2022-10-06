@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,21 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <div>
         <img class="nav_image" src="../Component.png" alt="">
         <h1 class="game_title">SPEED TYPING GAME</h1>
     </div>
-    
+
     <div class="kids_holding_div">
         <img class="kids_holding" src="../2794.jpg" alt="">
     </div>
 
+    <h1 class="message_lost"> YOU LOST</h1>
+
     <section class="choose_level">
-        <h1 class="message_lost"> YOU LOST</h1>
         <div class="button_level">
             <h2>Choose Level</h2>
             <div class="levels">
@@ -30,15 +33,23 @@
                 </ul>
             </div>
         </div>
-        
+
     </section>
 
-    <section class="score_timer">
-        <span id="score">score:</span>
-        <span id="timer">Timer:</span>
-    
+    <section id="game_interface">
+        <div id="play_erea">
+            <p>you are ready to play <span id="playing_lvl"></span> level in <span class="level_time"></span> seconds.</p>
+            <input class="word_input" type="text" placeholder="Type here">
+            <span id="word_show">Word will be shown here</span>
+            <button id="start_btn" onclick="startPlay()">Start Typing</button>
+        </div>
+        <div class="score_timer">
+            <span id="score">score:</span>
+            <span>Timer: <span class="timer"></span></span>
+        </div>
     </section>
 
-    <script src="../script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

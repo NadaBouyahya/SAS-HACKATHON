@@ -109,12 +109,20 @@
       </div>
     </div>
     <!--  -->
-      <div class="control">
-        <div class="time">Time Left: <span></span> Seconds</div>
-        <div class="score">
-          Score: <span class="got">0</span> From <span class="total"></span>
-        </div>
+    <div class="control">
+      <div class="time">Time Left: <span></span> Seconds</div>
+      <div class="score">
+        Score: <span class="got">0</span> From <span class="total"></span>
       </div>
+      </div>
+      <form>
+        <input type="radio" id="Easy" name="fav_language" value="Easy" checked>
+        <label for="Easy">Easy</label><br>
+        <input type="radio" id="Normal" name="fav_language" value="Normal">
+        <label for="Normal">Normal</label><br>
+        <input type="radio" id="Hard" name="fav_language" value="Hard" class="">
+        <label for="Hard">Hard</label>
+      </form>
       <div class="finish"></div>
       <script src="app.js"></script>
     </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap');
 :root {
     --main-color: #3b41c9;
   }
@@ -5,10 +6,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Crafty Girls', cursive;
   }
-  body {
-    font-family: "Open Sans", sans-serif;
-  }
+
   .game {
     background-color: #eee;
     min-height: 100vh;
@@ -131,4 +131,7 @@ button{
     background-color: #dc3545;
     border: 1px solid #dc3545;
     color: white;
+}
+.btn-next{
+  color:red;
 }

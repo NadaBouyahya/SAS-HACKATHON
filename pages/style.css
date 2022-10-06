@@ -100,3 +100,35 @@ body {
 .message_lost{
     display: none;
 }
+
+#game_interface{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#play_erea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#play_erea p{
+    font-size: 20px;
+}
+
+.word_input{
+    width: 500px;
+    height: 30px;
+}
+
+#playing_lvl{
+    color:#FF826F;
+}
+
+.level_time{
+    color:#FF826F
+}

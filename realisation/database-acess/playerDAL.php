@@ -6,7 +6,7 @@ class PlayerDAL extends Connection {
  
     public function addPlayer($player){
 
-        $userName = $player->getName();
+        $userName = $player->getUserName();
         // Sql query
         $insertRow="INSERT INTO player (username) VALUES ('$userName')";
                                 

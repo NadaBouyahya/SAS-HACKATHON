@@ -1,7 +1,22 @@
+<?php
+
+require_once "../buisness/playerBLL.php";
+    
+    $playerBal = new PlayerBLL();
+
+    if (isset($_GET['id'])){
+      $id = $_GET['id'];
+      $player = $playerBal->getPlayer($id);
+  };
+	
+?>
+
+
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="css/game.css">
 <div class="game">
-    <div class="name">Fast typing</div>
     <div class="container">
       <div class="message">
         You Are Playing On
@@ -11,8 +26,22 @@
       <div class="start">Start Playing</div>
       <div class="the-word"></div>
       <input type="text" class="input" />
+      <div class="control">
+      <div class="time">Time Left: <span></span> Seconds</div>
+      <div class="score">
+        Score: <span class="got">0</span> From <span class="total"></span>
+      </div>
+      </div>
       <!-- <div class="upcoming-words">Words Will Show Here</div> -->
       <!--  -->
+      <form class="form">
+        <input type="radio" id="Easy" name="fav_language" value="Easy" checked>
+        <label for="Easy"> Easy</label><br>
+        <input type="radio" id="Normal" name="fav_language" value="Normal">
+        <label for="Normal">Normal</label><br>
+        <input type="radio" id="Hard" name="fav_language" value="Hard" class="">
+        <label for="Hard"> Hard</label>
+      </form>
       <div class="card mt-4 keycover">
         <div class="card-body col-12 row">
           <div class="keybord">
@@ -109,20 +138,8 @@
       </div>
     </div>
     <!--  -->
-    <div class="control">
-      <div class="time">Time Left: <span></span> Seconds</div>
-      <div class="score">
-        Score: <span class="got">0</span> From <span class="total"></span>
-      </div>
-      </div>
-      <form>
-        <input type="radio" id="Easy" name="fav_language" value="Easy" checked>
-        <label for="Easy">Easy</label><br>
-        <input type="radio" id="Normal" name="fav_language" value="Normal">
-        <label for="Normal">Normal</label><br>
-        <input type="radio" id="Hard" name="fav_language" value="Hard" class="">
-        <label for="Hard">Hard</label>
-      </form>
+
+
       <div class="finish"></div>
       <script src="javascript/app.js"></script>
     </div>

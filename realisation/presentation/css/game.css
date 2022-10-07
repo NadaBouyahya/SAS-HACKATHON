@@ -9,6 +9,10 @@
     font-family: 'Sassoon Primary', cursive;
   }
 
+ .form{
+  text-align: center;
+  
+ }
   .game {
     background-color: #eee;
     min-height: 100vh;

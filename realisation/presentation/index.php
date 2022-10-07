@@ -11,6 +11,7 @@ if(!empty($_POST)){
 	$playerBal->addPlayer($player);
 	
 	// redirect to index.php
+  header('location:game.php');
 }
 ?>
 

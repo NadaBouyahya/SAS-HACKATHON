@@ -9,7 +9,7 @@ class PlayerDAL extends Connection {
         $userName = $player->getUserName();
         // Sql query
         $insertRow="INSERT INTO player (username) VALUES ('$userName')";
-                                
+                          
         // Execute query
         mysqli_query($this->Connect(), $insertRow);
     }

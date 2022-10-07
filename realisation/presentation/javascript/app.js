@@ -1,4 +1,3 @@
-
 // Array Of Words
 const words = [
   "Hello",
@@ -22,7 +21,7 @@ const lvls = {
 };
 
 // Default Level
-let defaultLevelName = "Easy"; // Change Level From Here
+let defaultLevelName = "normal"; // Change Level From Here
 let defaultLevelSeconds = lvls[defaultLevelName];
 let savedLevelName = sessionStorage.getItem("levelName");
 if (savedLevelName) {

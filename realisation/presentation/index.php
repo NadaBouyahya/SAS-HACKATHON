@@ -27,7 +27,7 @@ if(!empty($_POST)){
   <body>
     <section>
       <header>
-        <h2><a href="#" class="logo">Logo</a></h2>
+        <h2><a href="#" class="logo">FAST TYPING</a></h2>
         <div class="navigation">
           <a href="#">Home</a>
           <a href="#">About</a>

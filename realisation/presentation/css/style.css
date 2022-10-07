@@ -14,7 +14,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: url(children-playing-boardgame-house_1308-94835.jpg)no-repeat;
+  background: url(../images/children-playing-boardgame-house_1308-94835.jpg)no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -107,6 +107,7 @@ header .navigation a:hover{
   letter-spacing: 2px;
   padding: 10px 20px;
   border-radius: 5px;
+  border: none;
   transition: 0.3s;
   transition-property: background;
 }
@@ -126,7 +127,7 @@ header .navigation a:hover{
   position: relative;
   color: #ffc906;
   font-size: 25px;
-  margin-top: 45px;
+  margin-top: 4px;
   transition: 0.3s;
   transition-property: transform;
 }

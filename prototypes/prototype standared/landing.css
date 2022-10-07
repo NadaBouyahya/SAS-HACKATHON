@@ -22,7 +22,7 @@ body{
 
   /*  */
 h1{
-    color:#fff;
+    color: #3b41c9;
     font-size: 3.5rem;
     position: absolute;
     top:20%;
@@ -66,21 +66,22 @@ h1{
 
 .split{
     position:absolute;
-    width:50%;
+    width:80%;
     height:100%;
     overflow: hidden;
 }
 
 .split.left{
+    right: 50px;
     left:0;
-    background: url('img/leftside.jpg');
+    background: url('img/children-playing-boardgame-house_1308-94835.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .split.right{
     right:0;
-    background: url('/SAS-HACKATHON-main/imgs/rightside.jpg');
+    background: url('img/');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -106,7 +107,7 @@ h1{
     transition: all 1s ease-in-out;
 } 
 
-.hover-left .left{
+/* .hover-left .left{
     width: var(--hover-width)
 }
 .hover-left .right{
@@ -118,7 +119,7 @@ h1{
 }
 .hover-right .right{
     width: var(--hover-width)
-}
+} */
 
 
 @media (max-width: 800px){
